@@ -38,7 +38,8 @@ class Interpreteur {
     "Tant Que",
     "Chaîne",
     "Booléen",
-    "Utilise"
+    "Utilise",
+    "à"
 );
     function __construct() {
         
