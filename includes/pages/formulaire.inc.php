@@ -2,7 +2,7 @@
   <fieldset>
     <div class="form-group">
       <legend>Cartouche</legend>
-        <select id="type" name="type" class="form-control">
+        <select id="type" name="type" class="form-control" onchange="changeType">
           <option value="procedure">Procédure</option>
           <option value="fonction">Fonction</option>
           <option value="dejacodee">Déjà Codée</option>
@@ -56,3 +56,16 @@
     <input type="submit" class="btn btn-success">
   </div>
 </form>
+
+<script>
+    function changeType(){
+    choice=$("#type").selectIndex();
+    if(choice == "procedure"){
+        $("label[for='sortie']").text("Paramètre de sortie");
+    }else if(choice == "fonction"){
+        $("label[for='sortie']").text("Retourne");
+    }
+    alert("Coucou");
+}
+
+</script>
