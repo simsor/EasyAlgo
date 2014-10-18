@@ -9,6 +9,7 @@ function changeTypeCartouche(){
     
     $("#blocSortie a.moins").show();
     $("#blocSortie a.plus").show();
+    
   }else if(choice == "fonction"){
     $("label[for='sortie']").text("Retourne");
     $("#blocPostCond").hide();
@@ -16,6 +17,18 @@ function changeTypeCartouche(){
     
     $("#blocSortie a.moins").hide();
     $("#blocSortie a.plus").hide();
+    
+    if(!$("#blocSortie textarea").length){ //Correction du bug découvert par Simon : retourne sans champ
+    	var nouvEntree = document.createElement("textarea");
+    	nouvEntree.setAttribute("placeholder", "Retourne");
+   		nouvEntree.setAttribute("class", "form-control");
+    	nouvEntree.setAttribute("cols", "40");
+    	nouvEntree.setAttribute("rows", "1");
+   	 	nouvEntree.setAttribute("name", "sortie1");
+    	$("#blocSortie").append(nouvEntree);
+    	$("#blocSortie").append(br);
+    	$("#blocSortie textarea:last").hide().fadeIn("slow");
+    }
   }else{
     $("#cartouche1").hide();
     $("#cartouche2").show();
@@ -164,6 +177,7 @@ $(function (){
 	});
 });
 
+//Pour afficher correctement le formulaire lors de l'actualisation
 $(function(){
 	changeTypeCartouche();
 } );
