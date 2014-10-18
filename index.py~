@@ -1,15 +1,12 @@
-#-*-coding: utf8
-
 import web
 
 urls = (
-    "/", "index"
+    "/", index
 )
-
 app = web.application(urls, globals())
 
 class index:
-    def GET(self):
+    def GET(self, name):
         return "Bonjour, bienvenue à l'accueil."
 
 if __name__ == "__main__":
