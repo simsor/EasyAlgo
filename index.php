@@ -1,26 +1,17 @@
-<?php
+<!doctype html>
+<html>
+  <head>
+    <title>Easy Algo</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <?php include "includes/header.inc.php"; ?>
+    
+    <?php include "includes/content.inc.php"; ?>
 
-if (!isset($_GET['id']))
-{
-  require "pages/index.inc.php";
-}
-else
-{
-  $page = $_GET['id'];
-  switch($page)
-  {
-    case 0:
-      require "includes/pages/index.inc.php";
-      break;
-      
-    case 1:
-      require "includes/pages/formulaire.inc.php";
-      break;
+    <?php include "includes/footer.inc.php"; ?>
 
-    default:
-      require "includes/pages/404.inc.php";
-      break;
-  }
-}
-
-?>
+  </body>
+</html>
