@@ -1,26 +1,30 @@
+<form action="" role="form">
+  <div class="form-group">
+    <label for="cartouche">Cartouche</label>
+    <textarea cols="40" rows="15" name="cartouche" id="cartouche" class="form-control" placeholder="Tapez votre cartouche"></textarea>
+  </div>
 
-<form action="">
-    <h3>Cartouche</h3>
-    <textarea cols="40" rows="15" name="cartouche" id="cartouche">
-        Tapez votre cartouche    
-    </textarea>
-    
-    <h3>Algo</h3>
-    <textarea cols="40" rows="15" name="algo" id="algo">
-        Tapez votre code Algo
-    </textarea>
-    <h3>Code</h3>
-    <textarea cols="40" rows="15" name="code" id="code">
-        Tapez votre code
-    </textarea>
-    <br>
+  <div class="form-group">
+    <label for="algo">Algo</label>
+    <textarea cols="40" rows="15" name="algo" id="algo" class="form-control" placeholder="Tapez votre code algo"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="code">Code</label>
+    <textarea cols="40" rows="15" name="code" id="code" class="form-control" placeholder="Tapez votre code"></textarea>
+  </div>
+
+  <div class="form-group">
     <label for="langage">Langage de programmation</label>
-    <select id="langage" name="language">
+    <select id="langage" name="language" class="form-control">
         <option value="c">C</option>
         <option value="cpp">C++</option>
         <option value="py">Python</option>
         <option value="java">Java</option>
     </select>
-    <br>
-    <input type="submit" id="generate" name="generate">
+  </div>
+
+  <div class="form-group">
+    <input type="submit" class="btn btn-success">
+  </div>
 </form>
