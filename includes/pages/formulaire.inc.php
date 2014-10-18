@@ -79,8 +79,3 @@
 	</div>
 </form>
 
-<style>
-a.badge{
-    margin-left: 10px;
-}
-</style>
