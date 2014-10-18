@@ -9,7 +9,7 @@
 			<select id="type" name="type" class="form-control" onchange="changeTypeCartouche()">
 				<option value="procedure">Procédure</option>
 				<option value="fonction">Fonction</option>
-				<option value="dejacodee">Déjà Codée</option>
+				<option value="dejacode">Déjà Codée</option>
 			</select>
 			<br/>
 			<div id="cartouche1">
