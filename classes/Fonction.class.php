@@ -19,7 +19,14 @@ class Fonction extends Formulaire {
     public function setRetourne($retourne) {
         $this->retourne = $retourne;
     }
-    
+    function affichage()
+    {
+            $str= $this->getDescription();
+            $str.= $this->getEntrees();
+            $str.= $this->getSortie();
+            $this->getPreconditions();
+            $this->getRetourne();
+    }
 
 
 }

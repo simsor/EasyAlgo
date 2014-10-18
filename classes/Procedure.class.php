@@ -31,5 +31,12 @@ class Procedure extends Formulaire {
         $this->postcondition = $postcondition;
     }
 
-
+    function affichage()
+    {
+            $str= $this->getDescription();
+            $str.= $this->getEntrees();
+            $str.= $this->getSortie();
+            $this->getPreconditions();
+            $this->getPostcondition();
+    }
 }

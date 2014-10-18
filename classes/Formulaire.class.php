@@ -38,4 +38,6 @@ class Formulaire {
     public function setPreconditions($preconditions) {
         $this->preconditions = $preconditions;
     }
+    
+    
 }
