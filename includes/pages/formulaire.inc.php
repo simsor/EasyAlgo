@@ -15,22 +15,22 @@
 				<label>Définition</label>
 				<textarea cols="40" rows="2" name="definition" id="definition" class="form-control" placeholder="définition"></textarea>
 				<div id="blocEntree">
-					<label for="entree">Paramètre d'entrée</label><a class="badge">+</a><a class="badge">-</a>
+					<label for="entree">Paramètre d'entrée</label><a class="badge plus">+</a><a class="badge moins">-</a>
 					<textarea cols="40" rows="1" name="entree1" id="entree" class="form-control" placeholder="Paramètre en Entrée"></textarea>
 					<br/>
 				</div>
 				<div id="blocSortie">
-					<label for="sortie">Paramètre de Sortie</label><a class="badge">+</a><a class="badge">-</a>
+					<label for="sortie">Paramètre de Sortie</label><a class="badge plus">+</a><a class="badge moins">-</a>
 					<textarea cols="40" rows="1" name="sortie1" id="sortie" class="form-control" placeholder="Paramètre en Sortie"></textarea>
 					<br/>
 				</div>
 				<div id="blocPreCond">
-					<label for="precondition">Pré-condition</label><a class="badge">+</a><a class="badge">-</a>
+					<label for="precondition">Pré-condition</label><a class="badge plus">+</a><a class="badge moins">-</a>
 					<textarea cols="40" rows="1" name="precondition1" id="precondition" class="form-control" placeholder="Pré-condition"></textarea>
 					<br/>
 				</div>
 				<div id="blocPostCond">
-					<label for="postcondition" class="postCond">Post-Condition</label><a class="badge">+</a><a class="badge">-</a>
+					<label for="postcondition" class="postCond">Post-Condition</label><a class="badge plus">+</a><a class="badge moins">-</a>
 					<textarea cols="40" rows="1" name="postcondition1" id="precondition" class="form-control postCond" placeholder="Post-Condition" ></textarea>
 				</div>
 			</div>
