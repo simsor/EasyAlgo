@@ -23,7 +23,7 @@ class Coloration {
     if ($info['http_code'] == 200 && $info['content_type'] == 'text/html') {
       return $response;
     } else {
-      return 'Error';
+      return 'Error. HTTP Response : ' . $infos['http_response'];
     }
 
   }
