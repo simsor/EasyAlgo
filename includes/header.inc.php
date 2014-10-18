@@ -6,8 +6,8 @@
             </div>
             <ul class="nav navbar-nav" >
                 <li><a href="index.php?id=1">Syntaxeur</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Dons</a></li>
+                <li><a href="index.php?id=2">Contact</a></li>
+                <li><a href="index.php?id=3">Dons</a></li>
             </ul>
           </div>
         </nav>
