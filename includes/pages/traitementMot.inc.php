@@ -5,13 +5,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-include '../../classes/Interpreteur.class.php';
-$interpreteur= new Interpreteur();
-$chaine = "Procédure nomtruc Avec faire";
-$chaine = explode(" ", $chaine);
-foreach($chaine as $value)
+if(isset($_POST['valider']))
 {
-    if($interpreteur->correspondance($value))
-        echo "<b><u>$value</u></b>";
-    echo "<br>"; 
+    include '../../classes/Interpreteur.class.php';
+    $interpreteur= new Interpreteur();
+    $chaine = $_POST['chaine'];
+    $chaine = explode(" ", $chaine);
+    foreach($chaine as $value)
+    {
+        if($interpreteur->correspondance($value))
+            echo "<b><u>$value</u></b>";
+        echo "<br>"; 
+    }
 }
+?>
+<form action="#" method="POST">
+    <textarea cols="20" rows="20" name="chaine">
+        
+    </textarea>
+    <input type="submit" name="valider" value="Valider">
+</form>
