@@ -12,19 +12,19 @@
 			<div id="cartouche1">
 				<label>Définition</label>
 				<textarea cols="40" rows="2" name="definition" id="definition" class="form-control" placeholder="définition"></textarea>
-				<label for="entree">Paramètre d'entrée</label>
+				<label for="entree">Paramètre d'entrée</label> <a class="badge">+</a>
 				<textarea cols="40" rows="1" name="entree" id="entree" class="form-control" placeholder="Paramètre en Entrée"></textarea>
 				<input type="button" value="+"/>
 				<br/>
-				<label for="sortie">Paramètre de Sortie</label>
+				<label for="sortie">Paramètre de Sortie</label> <a class="badge">+</a>
 				<textarea cols="40" rows="1" name="sortie" id="sortie" class="form-control" placeholder="Paramètre en Sortie"></textarea>
 				<input type="button" value="+" id="addParamSortie"/>
 				<br/>
-				<label for="precondition">Pré-condition</label>
+				<label for="precondition">Pré-condition</label> <a class="badge">+</a>
 				<textarea cols="40" rows="1" name="precondition" id="precondition" class="form-control" placeholder="Pré-condition"></textarea>
 				<input type="button" value="+"/>
 				<br/>
-				<label for="postcondition" class="postCond">Post-Condition</label>
+				<label for="postcondition" class="postCond">Post-Condition</label> <a class="badge">+</a>
 				<textarea cols="40" rows="1" name="postcondition" id="precondition" class="form-control postCond" placeholder="Post-Condition" ></textarea>
 				<input type="button" value="+" class="postCond"/>
 			</div>
