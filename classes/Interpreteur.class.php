@@ -2,46 +2,83 @@
 class Interpreteur {
     
    private $tableauAlgo = array(  	
+   	// A
+   	"A",
+   	"à",
+   	"Adresse",
+   	"Afficher",
+   	"Alors",
+   	"Avec",
+   	
+	//B
+	"Booleen",
+	"Booléen",
+	
+	//C
+	"Caractere",
+	"Caractère",
+	"Cas",
+	"Chaine",
+	"Chaîne",
+	"Contenu",
+   	
+   	//D
+   	"De",
+   	"Debut",
    	"Début",
+   	"Defaut",
+   	"Défaut",
+   	"Detruire",
+    "Détruire",
+    
+	//E
+	"Entier",
+	"Et",
+	
+	//F
+	"Faire",
     "Fin",
-    "Avec",
-    "Procédure",
-    "Fonction",
-    "Entier",
-    "Réel",
-    "Pointeur",
-    "Faire",
-    "Pour",
-    "TantQue",
-    "Tant Que",
-    "De",
-    "A",
-    "Retourne",
-    "Si",
-    "Alors",
-    "Sinon",
-    "FinSi",
-    "Fin Si",
-    "Nouveau",
-    "Programme",
-    "Caractère",
     "FinFaire",
     "Fin Faire",
-    "Selon",
-    "Cas",
-    "Défaut",
-    "Adresse",
-    "Detruire",
-    "Contenu",
-    "Module",
-    "Afficher",
-    "Saisir",
-    "Ou",
-    "Et",
-    "Chaîne",
-    "Booléen",
+    "FinSi",
+    "Fin Si",
+   	"Fonction",
+   	
+	//M
+   	"Module",
+   	
+	//N
+	"Nouveau",
+	
+	//O
+	"Ou",
+	
+	//P
+	"Pointeur",
+	"Pour",  
+    "Procedure",
+    "Procédure",
+    "Programme",
+    
+	//R
+	"Reel",
+    "Réel",
+	"Retourne",
+	
+	//S
+	"Saisir",
+	"Selon",
+    "Si", 
+    "Sinon",
+    
+    
+     //T
+    "TantQue",
+    "Tant Que",
+    
+    //U
     "Utilise",
-    "à"
+    
 );
     function __construct() {
         
