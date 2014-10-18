@@ -3,24 +3,25 @@
     <div class="form-group">
       <legend>Cartouche</legend>
         <select id="type" name="type" class="form-control">
-        <option value="procedure">Procédure</option>
-        <option value="fonction">Fonction</option>
+          <option value="procedure">Procédure</option>
+          <option value="fonction">Fonction</option>
+          <option value="dejacodee">Déjà Codée</option>
       </select>
       <label>Définition</label>
       <textarea cols="40" rows="2" name="definition" id="definition" class="form-control" placeholder="définition"></textarea>
-      <label>Paramètre d'entrée</label>
+      <label for="entree">Paramètre d'entrée</label>
       <textarea cols="40" rows="1" name="entree" id="entree" class="form-control" placeholder="Paramètre en Entrée"></textarea>
       <input type="submit" value="+"/>
       <br/>
-      <label>Paramètre de Sortie</label>
+      <label for="sortie">Paramètre de Sortie</label>
       <textarea cols="40" rows="1" name="sortie" id="sortie" class="form-control" placeholder="Paramètre en Sortie"></textarea>
       <input type="submit" value="+"/>
       <br/>
-      <label>Pré-condition</label>
+      <label for="precondition">Pré-condition</label>
       <textarea cols="40" rows="1" name="precondition" id="precondition" class="form-control" placeholder="Pré-condition"></textarea>
       <input type="submit" value="+"/>
-      <label>Post-Condition</label>
       <br/>
+      <label for="postcondition">Post-Condition</label>
       <textarea cols="40" rows="1" name="postcondition" id="precondition" class="form-control" placeholder="Post-Condition"></textarea>
       <input type="submit" value="+"/>
     </div>
@@ -46,6 +47,8 @@
         <option value="py">Python</option>
         <option value="java">Java</option>
       </select>
+      <p>
+       <input type="checkbox" name="numerotation" id="numerotation" /> <label for="numerotation">Numérotation des Lignes</label><br />
     </div>
   </fieldset>
 
