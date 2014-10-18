@@ -14,6 +14,7 @@
 			<div id="cartouche1">
 				<label>Définition</label>
 				<textarea cols="40" rows="2" name="definition" id="definition" class="form-control" placeholder="définition"></textarea>
+				<br/>
 				<div id="blocEntree">
 					<label for="entree">Paramètre d'entrée</label><a class="badge plus">+</a><a class="badge moins">-</a>
 					<textarea cols="40" rows="1" name="entree1" id="entree" class="form-control" placeholder="Paramètre en Entrée"></textarea>
