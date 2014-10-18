@@ -1,6 +1,6 @@
 <script src="js/form.js"></script>
 
-<form action="traitementFormulaire.inc.php" method="post" role="form">
+<form action="includes/pages/traitementFormulaire.inc.php" method="post" role="form">
 	<fieldset>
 		<div class="form-group">
 			<legend>
