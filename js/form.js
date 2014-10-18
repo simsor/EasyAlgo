@@ -17,8 +17,8 @@ function changeTypeCartouche(){
 
 }
 
-function addInput(o){
-	alert($(o).attr("id"));
+function addInput(){
+	alert();
 }
 
-$("input[type='button']").click(function() { addInput(this); } );
+$("input[type='button']").click(addInput);
