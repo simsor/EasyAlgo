@@ -2,7 +2,7 @@
 
 class Procedure extends Formulaire {
     private $sortie;
-    private $postcondition;
+    private $postcondition=array();
     
     function __construct($desc, $entrees, $preconditions,$sortie, $postcondition) {
         parent::__construct($desc, $entrees, $preconditions);
@@ -30,13 +30,32 @@ class Procedure extends Formulaire {
     public function setPostcondition($postcondition) {
         $this->postcondition = $postcondition;
     }
-
+    
     function affichage()
     {
-            $str= $this->getDescription();
-            $str.= $this->getEntrees();
-            $str.= $this->getSortie();
-            $this->getPreconditions();
-            $this->getPostcondition();
+        print_r($this->getPreconditions());
+        $str= $this->getDescription()."<br>";
+        $str.="Entrée(s):  ";
+        foreach($this->getEntrees() as $entree)
+        {
+            $str.=$entree."<br>";
+        }
+        $str.="Sortie(s): ";
+        foreach($this->getSortie() as $sortie)
+        {
+            $str.=$sortie."<br>";
+        }
+        $str.="Prè-condition(s): ";
+        foreach($this->getPreconditions() as $condition)
+        {
+            $str.=$condition."<br>";
+        }
+        $str.="Post-condition(s): ";
+        foreach($this->getPostcondition() as $condition)
+        {
+            $str.=$condition."<br>";
+        }
+        echo $str;
+        
     }
 }
