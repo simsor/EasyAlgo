@@ -30,13 +30,14 @@ class Interpreteur {
     "Adresse",
     "Detruire",
     "Contenu",
+    "Module",
 );
     function __construct() {
         
     }
     function compare($mot1, $mot2)
     {
-        if(strcmp(strtoupper($mot1), strtoupper($mot2)) == 0)
+        if(strcmp( mb_strtoupper($mot1,'UTF-8'), mb_strtoupper($mot2,'UTF-8')) == 0)
         {
             return true;
         }
