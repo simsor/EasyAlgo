@@ -11,6 +11,7 @@
 				<option value="fonction">Fonction</option>
 				<option value="dejacodee">Déjà Codée</option>
 			</select>
+			<br/>
 			<div id="cartouche1">
 				<label>Définition</label>
 				<textarea cols="40" rows="2" name="definition" id="definition" class="form-control" placeholder="définition"></textarea>
@@ -78,8 +79,3 @@
 	</div>
 </form>
 
-<style>
-a.badge{
-    margin-left: 10px;
-}
-</style>
