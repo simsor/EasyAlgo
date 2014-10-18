@@ -5,6 +5,7 @@
               <a class="navbar-brand" href="index.php">EasyAlgo</a>
             </div>
             <ul class="nav navbar-nav" >
+                <li><a href="index.php?id=1">Syntaxeur</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Dons</a></li>
             </ul>
