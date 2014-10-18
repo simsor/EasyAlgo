@@ -82,6 +82,8 @@ switch($type)
         break;
 }
 
+if(!empty($_POST['cartouche']))
+    $cartouche = $_POST['cartouche'];
 if(!empty($_POST['algo']))
     $algo= $_POST['algo'];
 
