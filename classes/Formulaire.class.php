@@ -11,7 +11,7 @@ class Formulaire {
     {
         $this->setDescription($desc);
         $this->setEntrees($entrees);
-        $this->getPreconditions($preconditions);
+        $this->setPreconditions($preconditions);
     }
     //getters
     public function getDescription() {

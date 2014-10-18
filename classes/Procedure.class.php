@@ -33,28 +33,29 @@ class Procedure extends Formulaire {
     
     function affichage()
     {
-        print_r($this->getPreconditions());
-        $str= $this->getDescription()."<br>";
-        $str.="Entrée(s):  ";
+        $str="/////////////////////////////////////////////////////////////////<br>";
+        $str.="// ".$this->getDescription()."<br>";
+        $str.="// Entrée(s):  <br>";
         foreach($this->getEntrees() as $entree)
         {
-            $str.=$entree."<br>";
+            $str.="//".$entree."<br>";
         }
-        $str.="Sortie(s): ";
+        $str.="// Sortie(s): ";
         foreach($this->getSortie() as $sortie)
         {
             $str.=$sortie."<br>";
         }
-        $str.="Prè-condition(s): ";
+        $str.="// Prè-condition(s): ";
         foreach($this->getPreconditions() as $condition)
         {
             $str.=$condition."<br>";
         }
-        $str.="Post-condition(s): ";
+        $str.="// Post-condition(s): ";
         foreach($this->getPostcondition() as $condition)
         {
             $str.=$condition."<br>";
         }
+        $str.="/////////////////////////////////////////////////////////////////<br>";
         echo $str;
         
     }

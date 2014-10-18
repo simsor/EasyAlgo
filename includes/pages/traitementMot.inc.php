@@ -9,11 +9,12 @@ if(isset($_POST['valider']))
     include '../../classes/Interpreteur.class.php';
     $interpreteur= new Interpreteur();
     $chaine = $_POST['chaine'];
+    $chaine.=" ";
     ?><pre><code><?php
     $chaineTmp="";
     for($i=0;$i<strlen($chaine);$i++)
     {
-        if(($chaine[$i]>='a' and $chaine[$i]<='z')or($chaine[$i]>='A' and $chaine[$i]<='Z')or($chaine[$i]>='à' and $chaine[$i]<='ü') )
+        if(($chaine[$i]>='a' and $chaine[$i]<='z')or($chaine[$i]>='A' and $chaine[$i]<='Z')or($chaine[$i]>='ï¿½' and $chaine[$i]<='ï¿½') )
         {
             $chaineTmp.=$chaine[$i];
         }
