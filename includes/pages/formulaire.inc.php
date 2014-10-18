@@ -14,19 +14,19 @@
 				<textarea cols="40" rows="2" name="definition" id="definition" class="form-control" placeholder="définition"></textarea>
 				<label for="entree">Paramètre d'entrée</label>
 				<textarea cols="40" rows="1" name="entree" id="entree" class="form-control" placeholder="Paramètre en Entrée"></textarea>
-				<input type="submit" value="+"/>
+				<input type="button" value="+"/>
 				<br/>
 				<label for="sortie">Paramètre de Sortie</label>
 				<textarea cols="40" rows="1" name="sortie" id="sortie" class="form-control" placeholder="Paramètre en Sortie"></textarea>
-				<input type="submit" value="+" id="addParamSortie"/>
+				<input type="button" value="+" id="addParamSortie"/>
 				<br/>
 				<label for="precondition">Pré-condition</label>
 				<textarea cols="40" rows="1" name="precondition" id="precondition" class="form-control" placeholder="Pré-condition"></textarea>
-				<input type="submit" value="+"/>
+				<input type="button" value="+"/>
 				<br/>
 				<label for="postcondition" class="postCond">Post-Condition</label>
 				<textarea cols="40" rows="1" name="postcondition" id="precondition" class="form-control postCond" placeholder="Post-Condition" ></textarea>
-				<input type="submit" value="+" class="postCond"/>
+				<input type="button" value="+" class="postCond"/>
 			</div>
 			<div id="cartouche2">
 			    <label>Cartouche</label>
