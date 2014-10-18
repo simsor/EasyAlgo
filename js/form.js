@@ -6,10 +6,16 @@ function changeTypeCartouche(){
     $("label[for='sortie']").text("Paramètre de sortie");
     $("#blocPostCond").show();
     $("#addParamSortie").show();
+    
+    $("#blocSortie a.moins").show();
+    $("#blocSortie a.plus").show();
   }else if(choice == "fonction"){
     $("label[for='sortie']").text("Retourne");
     $("#blocPostCond").hide();
     $("#addParamSortie").hide();
+    
+    $("#blocSortie a.moins").hide();
+    $("#blocSortie a.plus").hide();
   }else{
     $("#cartouche1").hide();
     $("#cartouche2").show();
@@ -24,7 +30,11 @@ function addInput(o){
   {
     case "blocEntree":
     var lastName = $("#blocEntree textarea:last").attr("name");
-    var number = lastName.replace("entree", "");
+    if(lastName){
+    	var number = lastName.replace("entree", "");
+    }else{
+    	var number = 1;
+    }
     number++;
     if (number > 10)
       return;
@@ -41,7 +51,11 @@ function addInput(o){
 
     case "blocSortie":
     var lastName = $("#blocSortie textarea:last").attr("name");
-    var number = lastName.replace("sortie", "");
+    if(lastName){
+    	var number = lastName.replace("entree", "");
+    }else{
+    	var number = 1;
+    }
     number++;
     if (number > 10)
       return;
@@ -58,7 +72,11 @@ function addInput(o){
 
     case "blocPreCond":
     var lastName = $("#blocPreCond textarea:last").attr("name");
-    var number = lastName.replace("precondition", "");
+    if(lastName){
+    	var number = lastName.replace("entree", "");
+    }else{
+    	var number = 1;
+    }
     number++;
     if (number > 10)
       return;
@@ -75,7 +93,11 @@ function addInput(o){
 
     case "blocPostCond":
     var lastName = $("#blocPostCond textarea:last").attr("name");
-    var number = lastName.replace("postcondition", "");
+    if(lastName){
+    	var number = lastName.replace("entree", "");
+    }else{
+    	var number = 1;
+    }
     number++;
     if (number > 10)
       return;
@@ -92,7 +114,11 @@ function addInput(o){
 
     case "blocPreCond":
     var lastName = $("#blocPreCond textarea:last").attr("name");
-    var number = lastName.replace("precondition", "");
+    if(lastName){
+    	var number = lastName.replace("entree", "");
+    }else{
+    	var number = 1;
+    }
     number++;
     if (number > 10)
       return;
@@ -108,17 +134,36 @@ function addInput(o){
     break;
 
   }
+  
+  var id = $(parent).attr("id");
+  $("#"+id+" a.moins").show();
+  
 }
 
 $(function() {
 
-  $("a.badge").click(function(){
+  $("a.plus").click(function(){
     addInput(this);
   });
 
 });
 
-$(function(){
-	
+function removeInput(o){
+	var parent = $(o).parent();
+	var id = $(parent).attr("id");
+	$("#"+id+" textarea:last").remove();
+	$("#"+id+" br:last").remove();
+	if(!$("#"+id+" textarea").length){
+		$("#"+id+" a.moins").hide();
+	}
+}
+
+$(function (){
+	$("a.moins").click(function(){
+		removeInput(this);
+	});
 });
 
+$(function(){
+	changeTypeCartouche();
+} );
