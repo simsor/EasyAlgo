@@ -2,6 +2,6 @@
 
 function __autoload($class){
     $rep="classes/";
-    return $rep.$class.".class.php";
+    require($rep.$class.".class.php");
 }
 ?>
