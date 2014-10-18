@@ -1,13 +1,13 @@
 <?php
 class Interpreteur {
     
-   private $tableauAlgo = array("DÃ©but",
+   private $tableauAlgo = array("Début",
     "Fin",
     "Avec",
-    "ProcÃ©dure",
+    "Procédure",
     "Fonction",
     "Entier",
-    "RÃ©el",
+    "Réel",
     "Pointeur",
     "Faire",
     "Pour",
@@ -26,11 +26,19 @@ class Interpreteur {
     "FinFaire",
     "Selon",
     "Cas",
-    "Defaut",
+    "Défaut",
     "Adresse",
     "Detruire",
     "Contenu",
     "Module",
+    "Afficher",
+    "Saisir",
+    "Ou",
+    "Et",
+    "Tant Que",
+    "Chaîne",
+    "Booléen",
+    "Utilise"
 );
     function __construct() {
         

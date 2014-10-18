@@ -1,4 +1,6 @@
-<form action="" role="form">
+<script src="js/form.js"></script>
+
+<form action="traitementFormulaire.inc.php" method="post" role="form">
 	<fieldset>
 		<div class="form-group">
 			<legend>
@@ -13,27 +15,23 @@
 				<label>Définition</label>
 				<textarea cols="40" rows="2" name="definition" id="definition" class="form-control" placeholder="définition"></textarea>
 				<div id="blocEntree">
-					<label for="entree">Paramètre d'entrée</label>
-					<textarea cols="40" rows="1" name="entree" id="entree" class="form-control" placeholder="Paramètre en Entrée"></textarea>
-					<input type="button" value="+" onclick="addInput()" id="test"/>
+					<label for="entree">Paramètre d'entrée</label><a class="badge">+</a><a class="badge">-</a>
+					<textarea cols="40" rows="1" name="entree1" id="entree" class="form-control" placeholder="Paramètre en Entrée"></textarea>
 					<br/>
 				</div>
 				<div id="blocSortie">
-					<label for="sortie">Paramètre de Sortie</label>
-					<textarea cols="40" rows="1" name="sortie" id="sortie" class="form-control" placeholder="Paramètre en Sortie"></textarea>
-					<input type="button" value="+" id="addParamSortie" onclick="addInput()"/>
+					<label for="sortie">Paramètre de Sortie</label><a class="badge">+</a><a class="badge">-</a>
+					<textarea cols="40" rows="1" name="sortie1" id="sortie" class="form-control" placeholder="Paramètre en Sortie"></textarea>
 					<br/>
 				</div>
 				<div id="blocPreCond">
-					<label for="precondition">Pré-condition</label>
-					<textarea cols="40" rows="1" name="precondition" id="precondition" class="form-control" placeholder="Pré-condition"></textarea>
-					<input type="button" value="+" onclick="addInput()"/>
+					<label for="precondition">Pré-condition</label><a class="badge">+</a><a class="badge">-</a>
+					<textarea cols="40" rows="1" name="precondition1" id="precondition" class="form-control" placeholder="Pré-condition"></textarea>
 					<br/>
 				</div>
 				<div id="blocPostCond">
-					<label for="postcondition" class="postCond">Post-Condition</label>
-					<textarea cols="40" rows="1" name="postcondition" id="precondition" class="form-control postCond" placeholder="Post-Condition" ></textarea>
-					<input type="button" value="+" class="postCond" onclick="addInput()"/>
+					<label for="postcondition" class="postCond">Post-Condition</label><a class="badge">+</a><a class="badge">-</a>
+					<textarea cols="40" rows="1" name="postcondition1" id="precondition" class="form-control postCond" placeholder="Post-Condition" ></textarea>
 				</div>
 			</div>
 			<div id="cartouche2">
@@ -78,4 +76,3 @@
 		<input type="submit" class="btn btn-success">
 	</div>
 </form>
-
