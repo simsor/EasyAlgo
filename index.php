@@ -4,6 +4,9 @@
     <title>Easy Algo</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
     <meta charset="utf-8" />
   </head>
   <body>
