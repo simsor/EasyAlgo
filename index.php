@@ -1,11 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head lang="<?php echo $str_language; ?>" xml:lang="<?php echo $str_language; ?>">
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>MAMP PRO</title>
-<style type="text/css">
-</head>
-	<body>
-<?php require_once('includes/header.inc.php') ?>
-	</body>
+
+<!doctype html>
+<html>
+  <head>
+    <title>Easy Algo</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <?php include "includes/header.inc.php"; ?>
+    
+    <?php include "includes/content.inc.php"; ?>
+
+    <?php include "includes/footer.inc.php"; ?>
+
+  </body>
+</html>
+
