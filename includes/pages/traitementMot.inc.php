@@ -14,8 +14,9 @@ if(isset($_POST['valider']))
     foreach($chaine as $value)
     {
         if($interpreteur->correspondance($value))
-            echo "<b><u>$value</u></b>";
-        echo "<br>"; 
+            echo "<b><u>$value</u></b> ";
+        else
+            echo $value; 
     }
 }
 ?>

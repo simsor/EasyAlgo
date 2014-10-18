@@ -37,7 +37,7 @@ class Interpreteur {
     }
     function compare($mot1, $mot2)
     {
-        if(strcmp( mb_strtoupper($mot1,'UTF-8'), mb_strtoupper($mot2,'UTF-8')) == 0)
+        if(strcmp(strtolower($mot1), strtolower(utf8_decode($mot2))) == 0)
         {
             return true;
         }
