@@ -5,6 +5,7 @@
     <title>Easy Algo</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="style.css"/>
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>

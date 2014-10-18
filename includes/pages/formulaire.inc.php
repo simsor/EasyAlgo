@@ -77,3 +77,9 @@
 		<input type="submit" class="btn btn-success">
 	</div>
 </form>
+
+<style>
+a.badge{
+    margin-left: 10px;
+}
+</style>
