@@ -1,45 +1,84 @@
 <?php
 class Interpreteur {
     
-   private $tableauAlgo = array("Début",
+   private $tableauAlgo = array(  	
+   	// A
+   	"A",
+   	"Ã ",
+   	"Adresse",
+   	"Afficher",
+   	"Alors",
+   	"Avec",
+   	
+	//B
+	"Booleen",
+	"BoolÃ©en",
+	
+	//C
+	"Caractere",
+	"CaractÃ¨re",
+	"Cas",
+	"Chaine",
+	"ChaÃ®ne",
+	"Contenu",
+   	
+   	//D
+   	"De",
+   	"Debut",
+   	"DÃ©but",
+   	"Defaut",
+   	"DÃ©faut",
+   	"Detruire",
+    "DÃ©truire",
+    
+	//E
+	"Entier",
+	"Et",
+	
+	//F
+	"Faire",
     "Fin",
-    "Avec",
-    "Procédure",
-    "Fonction",
-    "Entier",
-    "Réel",
-    "Pointeur",
-    "Faire",
-    "Pour",
-    "TantQue",
-    "De",
-    "A",
-    "Retourne",
-    "Si",
-    "Alors",
-    "Sinon",
-    "FinSi",
-    "Nouveau",
-    "Programme",
-    "Caractere",
-    "Chaine",
     "FinFaire",
-    "Selon",
-    "Cas",
-    "Défaut",
-    "Adresse",
-    "Detruire",
-    "Contenu",
-    "Module",
-    "Afficher",
-    "Saisir",
-    "Ou",
-    "Et",
+    "Fin Faire",
+    "FinSi",
+    "Fin Si",
+   	"Fonction",
+   	
+	//M
+   	"Module",
+   	
+	//N
+	"Nouveau",
+	
+	//O
+	"Ou",
+	
+	//P
+	"Pointeur",
+	"Pour",  
+    "Procedure",
+    "ProcÃ©dure",
+    "Programme",
+    
+	//R
+	"Reel",
+    "RÃ©el",
+	"Retourne",
+	
+	//S
+	"Saisir",
+	"Selon",
+    "Si", 
+    "Sinon",
+    
+    
+     //T
+    "TantQue",
     "Tant Que",
-    "Chaîne",
-    "Booléen",
+    
+    //U
     "Utilise",
-    "à"
+    
 );
     function __construct() {
         
