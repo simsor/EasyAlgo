@@ -20,6 +20,7 @@ function changeTypeCartouche(){
     
     if(!$("#blocSortie textarea").length){ //Correction du bug découvert par Simon : retourne sans champ
     	var nouvEntree = document.createElement("textarea");
+    	var br = document.createElement("br");
     	nouvEntree.setAttribute("placeholder", "Retourne");
    		nouvEntree.setAttribute("class", "form-control");
     	nouvEntree.setAttribute("cols", "40");
