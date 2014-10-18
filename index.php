@@ -12,6 +12,7 @@
     <meta charset="utf-8" />
   </head>
   <body>
+    <?php include "includes/autoload.inc.php"; ?>
     <?php include "includes/header.inc.php"; ?>
     
     <?php include "includes/content.inc.php"; ?>

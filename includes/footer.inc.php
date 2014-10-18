@@ -1,5 +1,5 @@
 
-        <nav class="navbar navbar-inverse"id="footer">
+        <nav id="footer" style="background-color: #222222; padding-top: 7px;">
 				<div >
       				<div class="container">
         				<p class="text-muted credit">Réalisé par Courtin, Garrelou, Jarrige, Imbert, Tricard</p>
