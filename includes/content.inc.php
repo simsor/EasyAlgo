@@ -22,6 +22,10 @@
 	require "includes/pages/contact.inc.php";
 	break;
 
+      case 3:
+  require "includes/pages/dons.inc.php";
+  break;
+
       default:
 	require "includes/pages/404.inc.php";
 	break;
