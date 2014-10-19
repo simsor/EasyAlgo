@@ -92,13 +92,15 @@ switch ($type) {
         }
 
         $i = 1;
-        //on va chercher le retourne (unique)
+        $retourne="";//on va chercher le retourne (unique)
         if(!empty($_POST['sortie1'])) {
             $retourne = $_POST['sortie1'];
             $i++;
         }
-        $fonction = new Fonction($description, $entrees, $preconditions, $retourne);
-        $fonction->affichage();
+        if(!empty($description)){
+            $fonction = new Fonction($description, $entrees, $preconditions, $retourne);
+            $fonction->affichage();
+        }
         if(!empty($_POST['algo'])){
             //include '../../classes/Interpreteur.class.php';
             $interpreteur= new Interpreteur();
@@ -133,6 +135,34 @@ switch ($type) {
             $cartouche = $_POST['cartouche'];
 
             echo $cartouche;
+            if(!empty($_POST['algo'])){
+            //include '../../classes/Interpreteur.class.php';
+            $interpreteur= new Interpreteur();
+            $chaine = $_POST['algo'];
+            $chaine.=" ";
+            ?><pre><code><?php
+            $chaineTmp="";
+            for($i=0;$i<strlen($chaine);$i++){
+            if(($chaine[$i]>='a' and $chaine[$i]<='z')or($chaine[$i]>='A' and $chaine[$i]<='Z')or($chaine[$i]>='�' and $chaine[$i]<='�') ){
+                $chaineTmp.=$chaine[$i];
+            }
+            else{
+                if($interpreteur->correspondance($chaineTmp))
+                    echo "<b><u>$chaineTmp</u></b> ";
+                else
+                    echo $chaineTmp;
+                $chaineTmp="";
+                echo $chaine[$i];
+                }
+            }
+            ?></code></pre>     <?php
+        }
+        if(!empty($_POST['code'])){
+          ?><pre><code><?php
+          $c=Coloration::colorier($_POST['code']);
+          echo $c;
+          ?></code></pre><?php
+        }
         break;
     default :
         echo "Erreur type formulaire ! \n";
