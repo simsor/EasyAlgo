@@ -66,6 +66,12 @@ switch ($type) {
             }
             ?></code></pre>     <?php
         }
+        if(!empty($_POST['code'])){
+          ?><pre><code><?php
+          $c=Coloration::colorier($_POST['code']);
+          echo $c;
+          ?></code></pre><?php
+        }
 
         break;
     case "fonction" :
@@ -114,6 +120,12 @@ switch ($type) {
                 }
             }
             ?></code></pre>     <?php
+        }
+        if(!empty($_POST['code'])){
+          ?><pre><code><?php
+          $c=Coloration::colorier($_POST['code']);
+          echo $c;
+          ?></code></pre><?php
         }
         break;
     case "dejacode" :
