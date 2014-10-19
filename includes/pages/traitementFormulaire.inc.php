@@ -44,6 +44,28 @@ switch ($type) {
         }
         $procedure = new Procedure($description, $entrees, $preconditions, $sortie, $postcondition);
         $procedure->affichage();
+        if(!empty($_POST['algo'])){
+            //include '../../classes/Interpreteur.class.php';
+            $interpreteur= new Interpreteur();
+            $chaine = $_POST['algo'];
+            $chaine.=" ";
+            ?><pre><code><?php
+            $chaineTmp="";
+            for($i=0;$i<strlen($chaine);$i++){
+            if(($chaine[$i]>='a' and $chaine[$i]<='z')or($chaine[$i]>='A' and $chaine[$i]<='Z')or($chaine[$i]>='�' and $chaine[$i]<='�') ){
+                $chaineTmp.=$chaine[$i];
+            }
+            else{
+                if($interpreteur->correspondance($chaineTmp))
+                    echo "<b><u>$chaineTmp</u></b> ";
+                else
+                    echo $chaineTmp;
+                $chaineTmp="";
+                echo $chaine[$i];
+                }
+            }
+            ?></code></pre>     <?php
+        }
 
         break;
     case "fonction" :
@@ -71,7 +93,28 @@ switch ($type) {
         }
         $fonction = new Fonction($description, $entrees, $preconditions, $retourne);
         $fonction->affichage();
-
+        if(!empty($_POST['algo'])){
+            //include '../../classes/Interpreteur.class.php';
+            $interpreteur= new Interpreteur();
+            $chaine = $_POST['algo'];
+            $chaine.=" ";
+            ?><pre><code><?php
+            $chaineTmp="";
+            for($i=0;$i<strlen($chaine);$i++){
+            if(($chaine[$i]>='a' and $chaine[$i]<='z')or($chaine[$i]>='A' and $chaine[$i]<='Z')or($chaine[$i]>='�' and $chaine[$i]<='�') ){
+                $chaineTmp.=$chaine[$i];
+            }
+            else{
+                if($interpreteur->correspondance($chaineTmp))
+                    echo "<b><u>$chaineTmp</u></b> ";
+                else
+                    echo $chaineTmp;
+                $chaineTmp="";
+                echo $chaine[$i];
+                }
+            }
+            ?></code></pre>     <?php
+        }
         break;
     case "dejacode" :
         if (!empty($_POST['cartouche']))
