@@ -67,7 +67,7 @@ switch ($type) {
 
         $i = 1;
         //on va chercher le retourne (unique)
-        while (!empty($_POST['sortie1'])) {
+        if(!empty($_POST['sortie1'])) {
             $retourne = $_POST['sortie1'];
             $i++;
         }
