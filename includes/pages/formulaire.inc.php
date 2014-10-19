@@ -34,6 +34,7 @@
 				<div id="blocPostCond">
 					<label for="postcondition" class="postCond">Post-Condition</label><a class="badge plus">+</a><a class="badge moins">-</a>
 					<textarea cols="40" rows="1" name="postcondition1" id="precondition" class="form-control postCond" placeholder="Post-Condition" ></textarea>
+					<br/>
 				</div>
 			</div>
 			<div id="cartouche2">
