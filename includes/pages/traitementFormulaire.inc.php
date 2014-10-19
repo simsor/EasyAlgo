@@ -50,11 +50,9 @@ switch ($type) {
         $description = $_POST['definition'];
         $i = 1;
         //on récupère les entrées
-        if (!empty($_POST['Entree' . $i])) {
-            while (!empty($_POST['Entree' . $i])) {
-                $entrees[] = $_POST['Entree' . $i];
+        while (!empty($_POST['entree' . $i])) {
+                $entrees[]=$_POST['entree'. $i];
                 $i++;
-            }
         }
         $i = 1;
         //on récupère les prè-conditions
@@ -79,7 +77,7 @@ switch ($type) {
         if (!empty($_POST['cartouche']))
             $cartouche = $_POST['cartouche'];
 
-        echo $cartouche;
+            echo $cartouche;
         break;
     default :
         echo "Erreur type formulaire ! \n";

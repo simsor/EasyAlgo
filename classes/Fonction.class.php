@@ -21,11 +21,21 @@ class Fonction extends Formulaire {
     }
     function affichage()
     {
-            $str= $this->getDescription();
-            $str.= $this->getEntrees();
-            $str.= $this->getSortie();
-            $this->getPreconditions();
-            $this->getRetourne();
+            $str= "///////////////////////////////////////////////////////////////////////////////////////<br/>";
+            $str.= "//".$this->getDescription();
+            $array=$this->getEntrees();
+            $str.="<br/>//Entrees :  ";
+            foreach($array as $entree) { 
+                $str.="<br/>//&nbsp&nbsp&nbsp&nbsp-".$entree;
+            }
+            $str.="//Retourne : ".$this->getRetourne();
+            $array= $this->getPreconditions();
+            $str.="<br/>//Preconditions :  ";
+            foreach($array as $precond) { 
+                 $str.="<br/>//&nbsp&nbsp&nbsp&nbsp-".$precond;
+            }
+            $str.="<br/>///////////////////////////////////////////////////////////////////////////////////////<br/>";
+            echo $str;
     }
 
 
