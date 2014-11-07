@@ -1,4 +1,4 @@
-<?php header('Content-type: text/html; charset: UTF-8'); ?>
+<?php header('Content-Type: text/html; charset=utf-8');?>
 <!doctype html>
 <html>
   <head>
@@ -9,7 +9,7 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
-    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   </head>
   <body>
     <?php include "includes/autoload.inc.php"; ?>

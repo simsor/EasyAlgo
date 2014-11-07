@@ -3,7 +3,6 @@ class Interpreteur {
     
    private $tableauAlgo = array(  	
    	// A
-   	"A",
    	"à",
    	"Adresse",
    	"Afficher",
@@ -46,9 +45,11 @@ class Interpreteur {
    	
 	//M
    	"Module",
+       "Maillon",
    	
 	//N
 	"Nouveau",
+       "noeud",
 	
 	//O
 	"Ou",

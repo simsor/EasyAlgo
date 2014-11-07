@@ -14,12 +14,13 @@ if(isset($_POST['valider']))
     $chaineTmp="";
     for($i=0;$i<strlen($chaine);$i++)
     {
-        if(($chaine[$i]>='a' and $chaine[$i]<='z')or($chaine[$i]>='A' and $chaine[$i]<='Z')or($chaine[$i]>='�' and $chaine[$i]<='�') )
+        if(($chaine[$i]>='a' and $chaine[$i]<='z')or($chaine[$i]>='A' and $chaine[$i]<='Z')or($chaine[$i]>=utf8_decode('à') and $chaine[$i]<=utf8_decode('ü')) )
         {
             $chaineTmp.=$chaine[$i];
         }
         else
         {
+            
             if($interpreteur->correspondance($chaineTmp))
                 echo "<b><u>$chaineTmp</u></b> ";
             else
@@ -29,13 +30,7 @@ if(isset($_POST['valider']))
         }
     }
     ?></code></pre>     <?php
-    /*foreach($chaine as $value)
-    {
-        if($interpreteur->correspondance($value))
-            echo "<b><u>$value</u></b> ";
-        else
-            echo $value;
-    }*/
+    
 }
 ?>
 <form action="#" method="POST">
